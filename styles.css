@@ -43,10 +43,21 @@ td {
 
 input[type=number] {
     width: 6em;
+    height: 2em;
+    text-align: center;
+    border-radius: 3px;
+    background: #e5e9f0;
+
+}
+
+.button-submit{
+    height:2em;
+    width: 3em;
 }
 
 #sizePicker{
     font-family: 'Raleway', sans-serif;
     color: #0a376a;
-    
+
 }
+

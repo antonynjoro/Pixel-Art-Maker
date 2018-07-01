@@ -4,27 +4,27 @@
 // When size is submitted by the user, call makeGrid()
 var chosenColor, rowNumbers, columnNumbers, cell;
 
-chosenColor=$("#colorPicker");
+chosenColor = $("#colorPicker");
 rowNumbers = $("#inputHeight");
-columnNumbers =$("#inputWeight");
+columnNumbers = $("#inputWeight");
 
 
 function makeGrid() {
-    for ( var x = 1; rowNumbers.val() >=x ;x++) {
-        $("#pixelCanvas").append("<tr class='row'></tr>");
+    for (var x = 1; rowNumbers.val() >= x; x++) {
+        $("#pixelCanvas").append("<tr class='pixel-row'></tr>");
     };
-    var y =1;
-        while (columnNumbers.val()>=y){
-            $(".row").append("<td class='column'></td>");
-            y=y+1;
-        };
-// Your code goes here!
+    var y = 1;
+    while (columnNumbers.val() >= y) {
+        $(".pixel-row").append("<td class='column'></td>");
+        y = y + 1;
+    };
+    // Your code goes here!
 
 }
 
 
 
-$("#sizePicker").submit(function(event){
+$("#sizePicker").submit(function (event) {
     $("table").children().remove();
     makeGrid();
     fillColor();
@@ -32,10 +32,10 @@ $("#sizePicker").submit(function(event){
 });
 
 
-function fillColor(){
-    $("td").click(function(){
+function fillColor() {
+    $("td").click(function () {
         $(this).css("background-color", chosenColor.val())
     }
     )
-    
+
 }
