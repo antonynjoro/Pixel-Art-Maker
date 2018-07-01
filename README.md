@@ -12,6 +12,7 @@ I created the Pixel Art Maker using
 2. jQuery linked from the Google CDN
 3. My Own CSS
 4. Bootstrap Css for gridding
+5. Font Awesome Icon CDN for the Git Hub Icon
 
 ## Comments
 
