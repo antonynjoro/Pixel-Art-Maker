@@ -1,6 +1,3 @@
-body {
-    text-align: center;
-}
 
 h1 {
     font-family: 'Fredoka One', cursive;
@@ -36,6 +33,7 @@ tr {
    
 }
 
+
 td {
     width: 20px;
     
@@ -51,8 +49,15 @@ input[type=number] {
 }
 
 .button-submit{
-    height:2em;
-    width: 3em;
+    
+    width: 100%;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
 }
 
 #sizePicker{
@@ -61,3 +66,55 @@ input[type=number] {
 
 }
 
+  /* allowing canvas to be 90% of the screen */
+ @media (min-width: 1200px){
+.container {
+    max-width: 90%;
+    height: 100vh;
+}}
+
+/* making the text boxes 100% width */
+#inputHeight, #inputWeight{
+    width:100%;
+}
+.label{
+    text-align: center;
+    width: 100%;
+}
+
+/* vertically Center Elements */
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .height-max{
+      height: 100vh;
+  }
+
+  #design-canvas{
+    
+        position: absolute;
+        top: 0;
+        text-align:center;
+        width:100%;
+  }
+
+  /* allowing canvas to be 90% of the screen */
+ @media (min-width: 1200px){
+    .border-right {
+        border-right: solid 0.5px lightgray;
+    }}
+
+    /* styling for all center align functionality */
+.text-align-center{
+    text-align: center;
+}
+
+/* styling for the color picker */
+#colorPicker{
+    height:100px;
+    width: 100%;
+    
+}

@@ -4,44 +4,49 @@
 <head>
     <title>Pixel Art Maker!</title>
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Raleway" rel="stylesheet">
-    
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="containter">
-        <div class="row">
-            <div class="col-md-12">
-                    <h1>Lab: Pixel Art Maker</h1>
-            </div>
-        </div>
-    </div>
+
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-3 vertical-center height-max border-right">
+                <div>
+                    <h1>Lab: Pixel Art Maker</h1>
+                </div>
                 <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="10"> Grid Width:
-        <input type="number" id="inputWeight" name="width" min="1" value="10">
-        <input type="submit" class="button-submit">
-    </form>
+                <form id="sizePicker">
+                    <div class="form-group">
+                        <label class="label">Grid Height:</label>
+                        <input class="form-control" type="number" id="inputHeight" name="height" min="1" max="30" value="20"> </div>
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
- 
+                    <div class="form-group">
+                        <label class="label"> Grid Width:</label>
+                        <input class="form-control" type="number" id="inputWeight" name="width" min="1" max="50" value="20">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button-submit">submit</button>
+                    </div>
+                </form>
+
+                <h2 class="text-align-center">Pick A Color</h2>
+                <input class=" text-align-center" type="color" id="colorPicker">
+
             </div>
-            <div class="col-md-8">
-                    <h2>Design Canvas</h2>
-                    <table id="pixelCanvas"></table>
+            <div class="col-lg-9 vertical-center ">
+                <h2 id="design-canvas">Design Canvas</h2>
+                <table id="pixelCanvas"></table>
             </div>
         </div>
     </div>
-   
 
-   
-    
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="designs.js"></script>
